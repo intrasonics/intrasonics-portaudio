@@ -18,4 +18,4 @@ intrasonics-portaudio is designed to be `require` to use from your own applicati
 
 This software is released under the Apache 2.0 license. Copyright 2017 Intrasonics Ltd.
 
-This software uses libraries from the PortAudio project. The [license terms for PortAudio](http://portaudio.com/license.html) are stated to be an [MIT license](http://opensource.org/licenses/mit-license.php). Streampunk Media are grateful to Ross Bencina and Phil Burk for their excellent library.
+This software uses libraries from the PortAudio project. The [license terms for PortAudio](http://portaudio.com/license.html) are stated to be an [MIT license](http://opensource.org/licenses/mit-license.php).
