@@ -21,7 +21,7 @@
 #ifndef NAUDIODON_COMMON_H
 #define NAUDIODON_COMMON_H
 
-#define FRAMES_PER_BUFFER  (256)
+#define FRAMES_PER_BUFFER  (1024)
 
 struct PortAudioData {
   unsigned char* buffer;

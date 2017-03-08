@@ -26,6 +26,7 @@ exports.SampleFormat8Bit = 8;
 exports.SampleFormat16Bit = 16;
 exports.SampleFormat24Bit = 24;
 exports.SampleFormat32Bit = 32;
+exports.SampleFormat32BitFloat = 33;
 
 function AudioWriter (opts) {
   Writable.call(this);

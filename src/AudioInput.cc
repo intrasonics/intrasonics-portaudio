@@ -15,7 +15,7 @@
 
 #include "AudioInput.h"
 
-#define FRAMES_PER_BUFFER  (256)
+#define FRAMES_PER_BUFFER  (1024)
 
 using namespace std;
 
@@ -112,6 +112,9 @@ NAN_METHOD(OpenInput) {
     break;
   case 32:
     inputParameters.sampleFormat = paInt32;
+    break;
+  case 33:
+    inputParameters.sampleFormat = paFloat32;
     break;
   default:
     return Nan::ThrowError("Invalid sampleFormat.");
@@ -288,6 +291,7 @@ static int nodePortAudioInputCallback(
     multiplier = 3;
     break;
   case paInt32:
+  case paFloat32:
     multiplier = 4;
     break;
   }

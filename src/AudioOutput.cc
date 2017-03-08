@@ -103,6 +103,9 @@ NAN_METHOD(OpenOutput) {
   case 32:
     outputParameters.sampleFormat = paInt32;
     break;
+  case 33:
+    outputParameters.sampleFormat = paFloat32;
+    break;
   default:
     return Nan::ThrowError("Invalid sampleFormat.");
   }
@@ -246,6 +249,7 @@ static int nodePortAudioOutputCallback(
     multiplier = 3;
     break;
   case paInt32:
+  case paFloat32:
     multiplier = 4;
     break;
   }
